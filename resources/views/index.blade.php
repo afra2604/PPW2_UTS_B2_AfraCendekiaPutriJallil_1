@@ -12,26 +12,24 @@
 </head>
 <body>
     @yield('halo')
-    <h1 class="text-center" >SISTEM TAMPILKAN BARANG</h1>
+    <h1 class="text-center" >SISTEM TAMPILKAN PEMAIN</h1>
     <div class="container">
 <table class="table table-striped table-hover">
     <thead>
     <tr>
         <th>id</th>
-        <th>nama_barang</th>
-        <th>harga</th>
-        <th>stok</th>
-        <th>id_supplier</th>
+        <th>nama_pemain</th>
+        <th>nomor_punggung</th>
+        <th>posisi</th>
     </tr>
 </thead>
 <tbody>
-    @foreach ($barang as $data_barang)
+    @foreach ($pemain as $data_pemain)
 <tr>
-        <td>{{ $data_barang->id }}</td>
-        <td>{{ $data_barang->nama_barang }}</td>
-        <td>{{ "Rp".$data_barang->harga }}</td>
-        <td>{{ $data_barang->stok }}</td>
-        <td>{{ $data_barang->id_supplier }}</td>
+        <td>{{ $data_pemain->id }}</td>
+        <td>{{ $data_pemain->nama_pemain }}</td>
+        <td>{{ $data_pemain->nomor_punggung }}</td>
+        <td>{{ $data_pemain->posisi}}</td>
     </tr>
     @endforeach
 </tbody>

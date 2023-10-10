@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BarangController;
+use App\Http\Controllers\PemainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +16,4 @@ use App\Http\Controllers\BarangController;
 
 
 
-Route::resource('/',BarangController::class);
+Route::resource('/', PemainController::class);

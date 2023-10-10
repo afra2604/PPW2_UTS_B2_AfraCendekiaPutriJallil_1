@@ -5,7 +5,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Barang;
+use App\Models\Pemain;
 
 class DatabaseSeeder extends Seeder
 {
@@ -23,29 +23,25 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        Barang::create([
-            'nama_barang' => 'meja',
-            'harga'=> '26000000',
-            'stok'=> '22',
-            'id_supplier' => '2510'
+        Pemain::create([
+            'nama_pemain' => 'Zola',
+            'nomor_punggung'=> '26',
+            'Posisi'=> 'Sayap Kiri'
+        ]
+        );
+
+        Pemain::create([
+            'nama_pemain' => 'Juan',
+            'nomor_punggung'=> '25',
+            'Posisi'=> 'Sayap Kanan'
         ]
         );
 
         
-        Barang::create([
-            'nama_barang' => 'kursi',
-            'harga'=> '30000000',
-            'stok'=> '30',
-            'id_supplier' => '2601'
-        ]
-        );
-
-        
-        Barang::create([
-            'nama_barang' => 'lemari',
-            'harga'=> '36000000',
-            'stok'=> '25',
-            'id_supplier' => '1209'
+        Pemain::create([
+            'nama_pemain' => 'Sze',
+            'nomor_punggung'=> '36',
+            'Posisi'=> 'Kapten'
         ]
         );
 

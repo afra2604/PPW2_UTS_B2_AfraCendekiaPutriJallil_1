@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Barang;
+use App\Models\Pemain;
 
-class BarangController extends Controller
+class PemainController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class BarangController extends Controller
      */
     public function index()
     {
-        $data_barang = Barang::all();
-        return view('index', ['barang'=>$data_barang]);
+        $data_pemain = Pemain::all();
+        return view('index', ['pemain'=>$data_pemain]);
     }
 
     /**
